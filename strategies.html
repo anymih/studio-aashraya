@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Studio Aashraya Design Strategies - Learn about our approach to sustainable architecture, passive design, and net-zero buildings in India.">
+    <title>Strategies | Studio Aashraya</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .strategy-block {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-xl);
+            align-items: center;
+        }
+
+        @media (min-width: 992px) {
+            .strategy-block {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .strategy-block:nth-child(even) .strategy-image {
+                order: 2;
+            }
+
+            .strategy-block:nth-child(even) .strategy-content {
+                order: 1;
+                padding-right: var(--spacing-lg);
+            }
+
+            .strategy-block:nth-child(odd) .strategy-content {
+                padding-left: var(--spacing-lg);
+            }
+        }
+
+        .strategy-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            background-color: var(--color-border);
+        }
+
+        .strategy-title {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-sm);
+            color: var(--color-accent);
+        }
+
+        .strategy-text {
+            font-size: 1.1rem;
+            color: var(--color-text-secondary);
+            margin-bottom: var(--spacing-md);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand">Studio Aashraya</a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="strategies.html" class="active">Strategies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header reveal">
+            <div class="container">
+                <h1 class="page-title">Our Design Philosophy</h1>
+                <p class="page-subtitle">We believe architecture should harmonize with nature, honoring local contexts
+                    while pioneering sustainable futures.</p>
+            </div>
+        </section>
+
+        <section class="section container">
+
+            <!-- Strategy 1 -->
+            <div class="strategy-block reveal">
+                <img src="https://images.unsplash.com/photo-1518002054494-3a6f94352e9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    alt="Passive Design Example" class="strategy-image">
+                <div class="strategy-content">
+                    <h2 class="strategy-title">Passive Design</h2>
+                    <p class="strategy-text">We craft buildings that naturally breathe. By meticulously analyzing sun
+                        paths and wind patterns, we utilize natural ventilation, daylight optimization, and critical
+                        shading. This eliminates the need for mechanical cooling, creating spaces that feel comfortable
+                        year-round.</p>
+                    <p class="strategy-text"><strong>Outcome:</strong> No mechanical cooling required, drastically
+                        reducing energy consumption and operational costs while maximizing occupant comfort.</p>
+                </div>
+            </div>
+
+            <!-- Strategy 2 -->
+            <div class="strategy-block reveal">
+                <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    alt="Net Zero Building" class="strategy-image">
+                <div class="strategy-content">
+                    <h2 class="strategy-title">Net-Zero Buildings</h2>
+                    <p class="strategy-text">True sustainability means giving back as much as we take. Our buildings are
+                        designed to harness renewable energy on-site, primarily solar power, to meet 100% of their
+                        operational energy needs.</p>
+                    <p class="strategy-text"><strong>Outcome:</strong> Absolute energy independence and a zero-carbon
+                        footprint across the building's lifecycle.</p>
+                </div>
+            </div>
+
+            <!-- Strategy 3 -->
+            <div class="strategy-block reveal">
+                <img src="https://images.unsplash.com/photo-1629853926604-984bb41e98d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    alt="Contextual Layout" class="strategy-image">
+                <div class="strategy-content">
+                    <h2 class="strategy-title">Contextual Architecture</h2>
+                    <p class="strategy-text">Architecture cannot exist in isolation. We deeply study the local climate,
+                        topography, and cultural heritage of Bihar and the surrounding regions. Every design decision
+                        respects local traditions and responds directly to the specific environment it inhabits.</p>
+                    <p class="strategy-text"><strong>Outcome:</strong> Spaces that feel anchored to their place,
+                        fostering a deep sense of belonging and cultural continuity.</p>
+                </div>
+            </div>
+
+            <!-- Strategy 4 -->
+            <div class="strategy-block reveal">
+                <img src="https://images.unsplash.com/photo-1589139266023-eb56d773ad69?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                    alt="Brick and Bamboo Material" class="strategy-image">
+                <div class="strategy-content">
+                    <h2 class="strategy-title">Vernacular Materials</h2>
+                    <p class="strategy-text">We champion the use of locally-sourced, low-embodied-energy materials like
+                        earth, bamboo, and compressed stabilized earth blocks (CSEB). By combining indigenous building
+                        techniques with modern engineering, we elevate humble materials to premium finishes.</p>
+                    <p class="strategy-text"><strong>Outcome:</strong> Reduction in carbon emissions associated with
+                        transport, support for local economies, and a distinct tactile richness in every space.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Call to Action -->
+        <section class="section" style="background-color: var(--color-surface); text-align: center;">
+            <div class="container reveal">
+                <h2 style="font-size: 2.5rem; margin-bottom: var(--spacing-sm);">See Our Philosophy in Action</h2>
+                <a href="projects.html" class="btn btn-primary">Explore Our Projects</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Studio Aashraya. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

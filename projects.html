@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Studio Aashraya Projects - A showcase of our luxury, sustainable, and net-zero architecture portfolio.">
+    <title>Projects | Studio Aashraya</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: var(--spacing-lg);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .project-card {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            aspect-ratio: 4/5;
+            background-color: var(--color-border);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .project-card:hover .project-image {
+            transform: scale(1.05);
+        }
+
+        .project-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: var(--spacing-lg);
+            background: linear-gradient(to top, rgba(26, 26, 26, 0.9) 0%, rgba(26, 26, 26, 0) 100%);
+            color: var(--color-text-inverse);
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.4s ease;
+        }
+
+        .project-card:hover .project-overlay {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .project-title {
+            font-size: 2rem;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .project-category {
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand">Studio Aashraya</a>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="strategies.html">Strategies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header reveal">
+            <div class="container">
+                <h1 class="page-title">Selected Works</h1>
+                <p class="page-subtitle">A curated collection of spaces designed to inspire, endure, and coexist with
+                    their environment.</p>
+            </div>
+        </section>
+
+        <!-- Projects Grid -->
+        <section class="section container">
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <a href="#" class="project-card reveal">
+                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                        alt="The Terraced House" class="project-image">
+                    <div class="project-overlay">
+                        <h2 class="project-title">The Terraced House</h2>
+                        <span class="project-category">Residential | Net-Zero</span>
+                    </div>
+                </a>
+
+                <!-- Project 2 -->
+                <a href="#" class="project-card reveal">
+                    <img src="https://images.unsplash.com/photo-1545084996-db2554799017?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                        alt="Cultural Center" class="project-image">
+                    <div class="project-overlay">
+                        <h2 class="project-title">Library of the Future</h2>
+                        <span class="project-category">Institutional | Passive Design</span>
+                    </div>
+                </a>
+
+                <!-- Project 3 -->
+                <a href="#" class="project-card reveal">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                        alt="Modern Retreat" class="project-image">
+                    <div class="project-overlay">
+                        <h2 class="project-title">Bamboo Pavilion</h2>
+                        <span class="project-category">Commercial | Vernacular</span>
+                    </div>
+                </a>
+
+                <!-- Project 4 -->
+                <a href="#" class="project-card reveal">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+                        alt="Urban Oasis" class="project-image">
+                    <div class="project-overlay">
+                        <h2 class="project-title">Urban Oasis</h2>
+                        <span class="project-category">Residential | Remodel</span>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="section" style="text-align: center; background-color: var(--color-surface);">
+            <div class="container reveal">
+                <h2 style="font-size: 2.5rem; margin-bottom: var(--spacing-md);">Discuss Your Project</h2>
+                <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Studio Aashraya. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

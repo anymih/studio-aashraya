@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Studio Aashraya - An India-based premium architectural design studio dedicated to sustainable, contextual design.">
+    <title>Studio Aashraya</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Page Specific CSS -->
+    <style>
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background-color: var(--color-surface);
+            overflow: hidden;
+            text-align: center;
+            padding: 0 var(--spacing-md);
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+            /* Placeholder for the hero image */
+            background: linear-gradient(rgba(26, 26, 26, 0.4), rgba(26, 26, 26, 0.4)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: var(--color-text-inverse);
+            max-width: 800px;
+        }
+
+        .hero-title {
+            font-size: clamp(3rem, 8vw, 6rem);
+            margin-bottom: var(--spacing-sm);
+            letter-spacing: 0.02em;
+        }
+
+        .hero-tagline {
+            font-size: clamp(1.2rem, 3vw, 1.8rem);
+            font-family: var(--font-body);
+            font-weight: 300;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        /* Intro Snapshot */
+        .intro {
+            padding: var(--spacing-xl) 0;
+            text-align: center;
+            background-color: var(--color-base);
+        }
+
+        .intro p {
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            font-family: var(--font-heading);
+            color: var(--color-text-primary);
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.4;
+        }
+
+        /* Featured Highlights */
+        .highlights {
+            background-color: var(--color-surface);
+            padding: var(--spacing-xl) 0;
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+        }
+
+        .highlight-card {
+            padding: var(--spacing-lg);
+            text-align: center;
+            border: 1px solid var(--color-border);
+            transition: transform var(--transition-smooth);
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .highlight-title {
+            font-size: 1.5rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .highlight-desc {
+            color: var(--color-text-secondary);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: var(--spacing-xl) 0;
+            text-align: center;
+            background-color: var(--color-base);
+        }
+
+        .cta-title {
+            font-size: 2.5rem;
+            margin-bottom: var(--spacing-md);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="brand">Studio Aashraya</a>
+            
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="strategies.html">Strategies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content reveal">
+                <h1 class="hero-title">Studio Aashraya</h1>
+                <p class="hero-tagline">Architecture for Sustainable Living</p>
+            </div>
+        </section>
+
+        <!-- Intro Snapshot -->
+        <section class="intro container reveal">
+            <p>Studio Aashraya is an architecture practice dedicated to sustainable, contextual design in India. We build spaces that honor local heritage while eliminating the need for mechanical cooling.</p>
+        </section>
+
+        <!-- Featured Highlights -->
+        <section class="highlights reveal">
+            <div class="container">
+                <h2 style="text-align: center; font-size: 2.5rem;">Our Core Pillars</h2>
+                
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <h3 class="highlight-title">Net-Zero Design</h3>
+                        <p class="highlight-desc">Our buildings harness solar power on-site to meet 100% of their energy needs, leaving a footprint of deep respect for the environment.</p>
+                        <a href="strategies.html" class="btn">Learn More</a>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <h3 class="highlight-title">Passive Strategies</h3>
+                        <p class="highlight-desc">Innovative natural ventilation, daylight optimization, and critical shading to eliminate the need for mechanical air-conditioning.</p>
+                        <a href="strategies.html" class="btn">Learn More</a>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <h3 class="highlight-title">Vernacular Materials</h3>
+                        <p class="highlight-desc">We emphasize using local bamboo, earth, and brick to reduce our footprint and seamlessly harmonize the structure with its place.</p>
+                        <a href="strategies.html" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section reveal">
+            <div class="container">
+                <h2 class="cta-title">Ready to Envision Your Space?</h2>
+                <a href="projects.html" class="btn btn-primary" style="margin-right: 1rem;">Explore Our Work</a>
+                <a href="contact.html" class="btn">Request Consultation</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Studio Aashraya. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
